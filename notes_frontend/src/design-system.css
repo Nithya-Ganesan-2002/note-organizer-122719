@@ -1,0 +1,256 @@
+:root {
+  /* Colors */
+  --color-2f80ed: #2f80ed;
+  --color-f2f2f2: #f2f2f2;
+  --color-f6a89e: #f6a89e;
+  --color-f9f3e5: #f9f3e5;
+  --color-33322e: #33322e;
+  --color-fff0ee: #fff0ee;
+  --color-f4d799: #f4d799;
+  --color-8cd4cb: #8cd4cb;
+  --color-878787: #878787;
+  --color-d0f4f0: #d0f4f0;
+  --color-ffffff: #ffffff;
+  --color-18191f: #18191f;
+  --color-000000: #000000;
+  --color-1947e5: #1947e5;
+  /* Add more from design tokens as needed */
+  /* Shadows */
+  --shadow-0: 12px 12px 0 0 #33322e;
+  --shadow-1: 2px 2px 0 0 #33322e;
+  /* Spacing (major, for margins/paddings) */
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-45: 45px;
+  --spacing-58: 58px;
+  --spacing-81: 81px;
+  --spacing-96: 96px;
+  --spacing-270: 270px;
+  --spacing-400: 400px;
+  --spacing-511: 511px;
+  --spacing-606: 606px;
+  --spacing-612: 612px;
+  --spacing-758: 758px;
+  --spacing-760: 760px;
+  --spacing-809: 809px;
+  --spacing-811: 811px;
+  --spacing-1024: 1024px;
+  --spacing-1230: 1230px;
+  --spacing-1440: 1440px;
+
+  /* Border radius */
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-12: 12px;
+  --radius-24: 24px;
+  --radius-36: 36px;
+
+  /* Typography */
+  --font-main: "Roboto", Arial, sans-serif;
+  --font-montserrat: "Montserrat", Arial, sans-serif;
+  /* Sample font sizes (expand as needed) */
+  --font-80: 80px;
+  --font-48: 48px;
+  --font-35: 35px;
+  --font-20: 20px;
+  --font-16: 16px;
+  --font-30: 30px;
+  --font-27: 27px;
+  --font-32: 32px;
+  --font-180: 180px;
+
+  /* Line heights */
+  --lh-24: 24px;
+  --lh-26: 26px;
+  --lh-36: 36px;
+  --lh-38: 38.4px;
+  --lh-45: 45.5px;
+  --lh-57: 57.6px;
+  --lh-96: 96px;
+
+  /* Font weights */
+  --weight-500: 500;
+  --weight-700: 700;
+  --weight-800: 800;
+  --weight-900: 900;
+}
+
+/* Utility classes for layout and tokens */
+.ds-bg-blue { background: var(--color-2f80ed); }
+.ds-bg-peach { background: var(--color-f6a89e); }
+.ds-bg-aqua { background: var(--color-8cd4cb); }
+.ds-bg-cream { background: var(--color-f9f3e5); }
+.ds-bg-white { background: var(--color-ffffff); }
+
+.ds-txt-white { color: var(--color-ffffff); }
+.ds-txt-dark { color: var(--color-33322e); }
+.ds-txt-grey { color: var(--color-878787); }
+.ds-txt-accent { color: var(--color-f6a89e); }
+.ds-txt-blue { color: var(--color-2f80ed); }
+.ds-txt-cream { color: var(--color-f2f2f2); }
+
+.ds-shadow-0 { box-shadow: var(--shadow-0); }
+.ds-shadow-1 { box-shadow: var(--shadow-1); }
+
+.ds-radius-4 { border-radius: var(--radius-4); }
+.ds-radius-6 { border-radius: var(--radius-6); }
+.ds-radius-12 { border-radius: var(--radius-12); }
+.ds-radius-24 { border-radius: var(--radius-24); }
+.ds-radius-36 { border-radius: var(--radius-36); }
+
+/* Typography */
+.ds-title-introduction {
+  font-family: var(--font-main);
+  font-size: var(--font-80);
+  font-weight: var(--weight-900);
+  line-height: var(--lh-96);
+  color: var(--color-f2f2f2);
+  letter-spacing: -2.4px;
+}
+
+.ds-desc-introduction, .ds-feedback {
+  font-family: var(--font-main);
+  font-size: var(--font-35);
+  font-weight: var(--weight-500);
+  line-height: var(--lh-45);
+  color: var(--color-f2f2f2);
+}
+
+.ds-title-template {
+  font-family: var(--font-main);
+  font-size: var(--font-48);
+  font-weight: var(--weight-700);
+  line-height: var(--lh-57);
+  color: var(--color-33322e);
+  text-align: center;
+}
+
+.ds-title-todo {
+  font-family: var(--font-main);
+  font-size: var(--font-48);
+  font-weight: var(--weight-700);
+  line-height: var(--lh-57);
+  color: var(--color-33322e);
+}
+
+.ds-todo-text {
+  font-family: var(--font-main);
+  font-size: var(--font-20);
+  font-weight: var(--weight-500);
+  line-height: var(--lh-26);
+  color: var(--color-33322e);
+}
+
+.ds-todo-time {
+  font-family: var(--font-main);
+  font-size: var(--font-20);
+  font-weight: var(--weight-500);
+  line-height: var(--lh-26);
+  color: var(--color-f6a89e);
+  text-align: right;
+}
+
+/* Container utility */
+.ds-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: var(--spacing-24);
+  box-sizing: border-box;
+}
+
+.ds-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+}
+.ds-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-12);
+}
+
+/* Todo styles (for Template 1, Template 2) */
+.ds-todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--spacing-4) var(--spacing-12);
+  background: var(--color-fff0ee);
+  border: 3px solid var(--color-33322e);
+  border-radius: var(--radius-6);
+  min-height: 28px;
+  margin-bottom: var(--spacing-8);
+}
+.ds-todo.completed {
+  background: var(--color-f6a89e);
+  color: var(--color-878787);
+  font-style: italic;
+}
+.ds-checkbox {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-6);
+  border: 3px solid var(--color-33322e);
+  background: var(--color-fff0ee);
+  margin-right: var(--spacing-12);
+}
+.ds-checkbox.completed {
+  background: var(--color-f6a89e);
+}
+/* Simple checkmark style for completed checkbox */
+.ds-checkbox.completed::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 8px;
+  border-left: 3px solid var(--color-f9f3e5);
+  border-bottom: 3px solid var(--color-f9f3e5);
+  transform: rotate(-45deg);
+  margin: 4px 0 0 4px;
+}
+
+.ds-divider {
+  width: 100%;
+  height: 0;
+  border-bottom: 4px solid var(--color-33322e);
+  margin: var(--spacing-24) 0 var(--spacing-24) 0;
+}
+
+.ds-box {
+  background: var(--color-f9f3e5);
+  border: 4px solid var(--color-33322e);
+  border-radius: var(--radius-36);
+  box-shadow: var(--shadow-0);
+  padding: var(--spacing-36);
+  margin: var(--spacing-24) auto;
+  max-width: 612px;
+}
+
+/* General resets */
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--color-ffffff);
+}
+h1, h2, h3, h4, h5, h6, p, div, span {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  box-sizing: border-box;
+}

@@ -2,6 +2,20 @@
 
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 
+---
+
+## ✨ Layout Implementation (Design System)
+
+This app is scaffolded with an initial layout matching the provided design system and HTML assets. The main structure (top navigation bar, sidebar note list, and primary note view area) is implemented using:
+- Color tokens and layout classes from `assets/design-system.css`
+- Structure and styles visually referenced from `assets/screen_5-1.html`, `assets/screen_73-996.html`, and `assets/screen_5-3.html`
+
+All root components (`App`, `TopNav`, `Sidebar`, `MainArea`) use the design system’s variables and utility classes, ensuring future screens/components will match the curated UI from the design assets.
+
+Further business logic, interactive features, and Supabase integration can build directly on top of this consistent structure.
+
+---
+
 ## Features
 
 - **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
@@ -31,21 +45,13 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Colors
 
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
+Core app colors and design tokens are now defined in `assets/design-system.css` and applied globally across the frontend.  
+Favor reusing those classes and variables for consistency.
 
 ### Components
 
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
+This template uses pure HTML/CSS components instead of a UI framework.  
+Components defined in `src/App.js` follow the design system references.
 
 Common components include:
 - Buttons (`.btn`, `.btn-large`)
